@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potenciador</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="potenciador.js"></script>
+</head>
+<body>
+
+
+<form>
+    <h2>Calcular potenciación</h2>
+    <input type="number" min="1" id="base" placeholder="base" required>
+    <input type="number" min="0" id="exponente" placeholder="exponente" required><br>
+</form>
+<button onclick="calcularNuevo()">Calcular</button>
+
+<p id="log"></p><br><br>
+
+<h3>Resultado:</h3>
+<p id="resultado"></p>
+
+
+<br><br>
+
+
+<h2>Historial de potenciaciones</h2>
+<button onclick="obtenerHistorial()">Refrescar</button>
+<ul id="historial">
+
+</ul>
+
+
+
+
+    
+</body>
+</html>
